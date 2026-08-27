@@ -1,0 +1,528 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0512.1636                               -->
+<workbook original-version='18.1' source-build='2026.1.2 (20261.26.0512.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='1777445128882-harrykart_ecommerce_data' inline='true' name='federated.0b71syq0gtdqbz165rqne0dfzldi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='1777445128882-harrykart_ecommerce_data' name='textscan.1hg35hn135iijl1174ozc05anlka'>
+            <connection class='textscan' directory='C:/Users/HP/Downloads' filename='1777445128882-harrykart_ecommerce_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1hg35hn135iijl1174ozc05anlka' name='1777445128882-harrykart_ecommerce_data.csv' table='[1777445128882-harrykart_ecommerce_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='OrderID' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='string' name='City' ordinal='2' />
+            <column datatype='string' name='Category' ordinal='3' />
+            <column datatype='string' name='Product' ordinal='4' />
+            <column datatype='integer' name='Quantity' ordinal='5' />
+            <column datatype='integer' name='Price' ordinal='6' />
+            <column datatype='integer' name='Revenue' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[1777445128882-harrykart_ecommerce_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OrderID]</local-name>
+            <parent-name>[1777445128882-harrykart_ecommerce_data.csv]</parent-name>
+            <remote-alias>OrderID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[1777445128882-harrykart_ecommerce_data.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[1777445128882-harrykart_ecommerce_data.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[1777445128882-harrykart_ecommerce_data.csv]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product]</local-name>
+            <parent-name>[1777445128882-harrykart_ecommerce_data.csv]</parent-name>
+            <remote-alias>Product</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[1777445128882-harrykart_ecommerce_data.csv]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[1777445128882-harrykart_ecommerce_data.csv]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Revenue]</local-name>
+            <parent-name>[1777445128882-harrykart_ecommerce_data.csv]</parent-name>
+            <remote-alias>Revenue</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Order ID' datatype='integer' name='[OrderID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+      <column caption='1777445128882-harrykart_ecommerce_data.csv' datatype='table' name='[__tableau_internal_object_id__].[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]' role='measure' type='quantitative' />
+      <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/HP/AppData/Local/Temp/TableauTemp/#TableauTemp_13krvcl0vt8pp31g3h10c1myw8yf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/27/2026 09:41:20 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>OrderID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OrderID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OrderID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>1777445128882-harrykart_ecommerce_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>1777445128882-harrykart_ecommerce_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>345</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>2</ordinal>
+              <family>1777445128882-harrykart_ecommerce_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>3</ordinal>
+              <family>1777445128882-harrykart_ecommerce_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product</remote-alias>
+              <ordinal>4</ordinal>
+              <family>1777445128882-harrykart_ecommerce_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quantity</remote-alias>
+              <ordinal>5</ordinal>
+              <family>1777445128882-harrykart_ecommerce_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price</remote-alias>
+              <ordinal>6</ordinal>
+              <family>1777445128882-harrykart_ecommerce_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>889</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Revenue</remote-alias>
+              <ordinal>7</ordinal>
+              <family>1777445128882-harrykart_ecommerce_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>946</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Product:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Clothing&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Rice&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Headphones&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Bread&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Milk&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jeans&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Phone&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Groceries&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Jacket&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Electronics&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;T-Shirt&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Laptop&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='1777445128882-harrykart_ecommerce_data.csv' id='1777445128882-harrykart_ecommerce_data.csv_548FBBE93F874AE9A45C8E4DAAD57F8C'>
+            <properties context=''>
+              <relation connection='textscan.1hg35hn135iijl1174ozc05anlka' name='1777445128882-harrykart_ecommerce_data.csv' table='[1777445128882-harrykart_ecommerce_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='OrderID' ordinal='0' />
+                  <column datatype='date' name='Date' ordinal='1' />
+                  <column datatype='string' name='City' ordinal='2' />
+                  <column datatype='string' name='Category' ordinal='3' />
+                  <column datatype='string' name='Product' ordinal='4' />
+                  <column datatype='integer' name='Quantity' ordinal='5' />
+                  <column datatype='integer' name='Price' ordinal='6' />
+                  <column datatype='integer' name='Revenue' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='1777445128882-harrykart_ecommerce_data' name='federated.0b71syq0gtdqbz165rqne0dfzldi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0b71syq0gtdqbz165rqne0dfzldi'>
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0b71syq0gtdqbz165rqne0dfzldi].[none:Product:nk]' />
+              <size column='[federated.0b71syq0gtdqbz165rqne0dfzldi].[sum:Revenue:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{74158501-5124-49E7-803C-E6E5F23A82C5}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0b71syq0gtdqbz165rqne0dfzldi].[none:Product:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0b71syq0gtdqbz165rqne0dfzldi].[sum:Revenue:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0b71syq0gtdqbz165rqne0dfzldi].[none:City:nk]</field>
+            <field>[federated.0b71syq0gtdqbz165rqne0dfzldi].[none:Product:nk]</field>
+            <field>[federated.0b71syq0gtdqbz165rqne0dfzldi].[qr:Date:ok]</field>
+            <field>[federated.0b71syq0gtdqbz165rqne0dfzldi].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0C91A7D3-97F6-43BC-A9D0-924DC38A2F16}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='164' name='Sheet 1' width='164'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
